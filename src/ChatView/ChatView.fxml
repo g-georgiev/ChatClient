@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChatView.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+    <children>
+      <Label fx:id="peopleLabel" text="Label" />
+      <TextArea fx:id="chatArea" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+      <TextField fx:id="newMsgField" onAction="#onEnter" GridPane.rowIndex="4" />
+    </children>
+</GridPane>
